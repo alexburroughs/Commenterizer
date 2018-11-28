@@ -17,4 +17,7 @@ func readFile() list {
 	inString.PushBack()
 }
 
-func 
+
+func commentLoop() {
+
+} 
