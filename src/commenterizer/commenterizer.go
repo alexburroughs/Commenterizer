@@ -1,7 +1,6 @@
-package commenterizer
+package main
 
 import (
-	"bytes"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -38,10 +37,10 @@ func readFile(filename string) []string {
 	}
 
 	// get length of byte array
-	n := bytes.Index(data, []byte{0})
+	//n := bytes.Index(data, []byte{0})
 
 	// convert byte array to string
-	s := string(data[:n])
+	s := string(data)
 
 	// split string on newline
 	inString = strings.Split(s, "\n")
